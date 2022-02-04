@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=poppins:200,300,400,500,600,700,800,900display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+}
+.card
+{
+     width: 600px;
+     height: 350px;
+     margin: 20px;
+     display: flex;
+     justify-content: flex-start;
+     align-items: center;
+     border-radius: 20px;
+     background: linear-gradient(135deg,#111,#1ef);
+}
+.card img
+{
+    position: absolute;
+    top: 40px;
+    bottom: 50;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 450px;
+    transition: 0.5s;
+}
+.card:hover img
+{
+    left: 70%;
+    height: 500px;
+}
+.card .content
+{
+    position: relative;
+    width: 80%;
+    left: 20%;
+    padding: 20px 20px 20px 100px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.card:hover .content
+{
+    opacity: 1;
+    visibility: visible;
+    left: 0%;
+}
+.card .content h2
+{
+    
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    line-height: 1em;
+    padding: 20px;
+}
+.card .content p
+{
+    color: #fff;
+    padding-bottom: 10px;
+}
+.card .content a
+{
+    position: relative;
+    display: inline-block;
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-top: 10px;
+    text-decoration: none ;
+}
